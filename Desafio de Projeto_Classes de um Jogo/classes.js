@@ -45,12 +45,28 @@ class jogador{
 
     //Imprime que o jogador de determinado tipo realizou um ataque de acordo com sua especialidade.
     atacar(){
-        console.log(`O ${this.tipo} atacou usando ${this.ataque}.`)
-    }
+
+        //Declaração da variável.
+        let tipoDeAtaque = ""
+            
+        //Implementação da estrutura condicional para verificar o tipo de jogador.
+        if(this.tipo == "mago"){
+            tipoDeAtaque = "magia"        
+        }
+        if(this.tipo == "guerreiro"){                
+            tipoDeAtaque = "espada"
+        }
+        if(this.tipo == "monge"){                
+            tipoDeAtaque = "artes marciais"
+        }
+        if(this.tipo == "ninja"){               
+            tipoDeAtaque = "shuriken"
+        }
+            
+        console.log(`O ${this.tipo} atacou usando ${tipoDeAtaque}.`) 
+    }        
     
 }
-
-
 
 //Instanciação dos objetos.
 
@@ -76,11 +92,19 @@ let boruto = new jogador("Kleber", 15, "ninja")
 
 //Usando a função para impressão.
 console.log("Uso da função atacar() para impressão: ")
+console.log("---------------------------------------")
 
 naruto.atacar()
 valquiria.atacar()
 magoDeFogo.atacar()
 jetLee.atacar()
+
+console.log("---------------------------------------")
+
+/*console.log("Você gostaria da cadastrar mais algum jogador?")
+let resposta = input("Se sim, digite (s). Se não, digite (n).")*/
+
+
 
 
 
