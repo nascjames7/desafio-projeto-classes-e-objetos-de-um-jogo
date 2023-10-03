@@ -47,73 +47,10 @@ class jogador{
     atacar(){
         console.log(`O ${this.tipo} atacou usando ${this.ataque}.`)
     }
-}
-
-//Função que retorna o tipo de ataque.
-function ataqueTotal(tipo){
-
-    console.log("Escolha o seu jogador: ")
-    console.log("1 - Alexander, o Mago de Gelo")
-    console.log("2 - Juan, o Mago de Fogo")
-    console.log("3 - Christian, o Mago Elétrico")
-    console.log("4 - John, o Cavaleiro Negro")
-    console.log("5 - Tina, a Valquiria")
-    console.log("6 - Walter, o Príncipe Dourado")
-    console.log("7 - Jonnathan, o Monge Rambo")
-    console.log("8 - Helian, o Monge Van Dame")
-    console.log("9 - Clark, o Monge Jet Lee")
-    console.log("10 - Anderson, o Ninja Jiraia")
-    console.log("11 - Kaio, o Ninja Naruto")
-    console.log("12 - Kléber, o Ninja Boruto")
-
-    //Solicita a escolha de um jogador.
-    let player = parseInt(prompt("Escolha um jogador digitando um número no intervalo: [1, 12]"))
-
-    //Implementação do laço para validação da escolha.
-    while(player < 1 && player > 12){
-        console.log("Esta escolha não é válida!")
-        console.log("Escolha um valor entre 1 e 12.")
-        console.log("Escolha o seu jogador: ")
-        console.log("1 - Alexander, o Mago de Gelo")
-        console.log("2 - Juan, o Mago de Fogo")
-        console.log("3 - Christian, o Mago Elétrico")
-        console.log("4 - John, o Cavaleiro Negro")
-        console.log("5 - Tina, a Valquiria")
-        console.log("6 - Walter, o Príncipe Dourado")
-        console.log("7 - Jonnathan, o Monge Rambo")
-        console.log("8 - Helian, o Monge Van Dame")
-        console.log("9 - Clark, o Monge Jet Lee")
-        console.log("10 - Anderson, o Ninja Jiraia")
-        console.log("11 - Kaio, o Ninja Naruto")
-        console.log("12 - Kléber, o Ninja Boruto")        
-
-        player = parseInt(prompt("Escolha um jogador digitando um número no intervalo: [1, 12]"))
-    }
-
-    //Declaração da variável.
-    let tipoDeAtaque = " "
     
-    //Implementação da estrutura condicional para verificar o tipo de jogador.
-    if(player > 0 && player < 4){
-        this.tipo == "mago"
-        tipoDeAtaque = "magia"        
-    }
-    if(player > 3 && player < 7){
-        this.tipo == "guerreiro"
-        tipoDeAtaque = "espada"
-    }
-    if(player > 6 && player < 10){
-        this.tipo == "monge"
-        tipoDeAtaque = "artes marciais"
-    }
-    if(player > 10 && player < 13){
-        this.tipo == "ninja"
-        tipoDeAtaque = "shuriken"
-    }
-
-    console.log("Uso da estrutura condicional e de repetição para impressão.")
-    console.log(`O ${this.tipo} atacou usando ${tipoDeAtaque}.`) 
 }
+
+
 
 //Instanciação dos objetos.
 
